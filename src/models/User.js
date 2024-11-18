@@ -21,4 +21,4 @@ userSchema.virtual('friendCount').get(function () {
 
 const User = model('User', userSchema);
 
-export default User; // Default export
+export default User; // Ensure the model is exported only once
