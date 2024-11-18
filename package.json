@@ -1,17 +1,30 @@
 {
   "name": "socialmediapi",
   "version": "1.0.0",
+  "type": "module",
   "description": "An API for a social network web application using MongoDB, Express, and Mongoose.",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "node server.js",
+    "start:prod": "node server.js",
+    "dev": "nodemon server.js",
+    "build": "tsc",
+    "seed": "node src/seeds/seed.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["social network", "API", "MongoDB", "Express", "Mongoose"],
+  "keywords": [
+    "social network",
+    "API",
+    "MongoDB",
+    "Express",
+    "Mongoose"
+  ],
   "author": "Jorge Bush",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "express": "^4.21.1",
+    "express-async-handler": "^1.2.0",
     "mongoose": "^8.8.1"
   },
   "devDependencies": {
